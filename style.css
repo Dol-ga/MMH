@@ -424,7 +424,21 @@ a #saleBanner div img {
 #productCheckoutList>div img {
     object-fit: scale-down;
     z-index: 1
+    height:12vh
 }
+
+checkoutQuantity div:first-child, checkoutQuantity div:nth-child(2) {
+    background-color: var(--green);
+    border-radius: 100%;
+    width: 100%;
+    height:100%;
+    transition: 0.3s;
+    user-select: none;
+}
+
+checkoutQuantity div:first-child:hover, checkoutQuantity div:nth-child(2):hover {
+    background-color: #3b8d3d;
+    transition: 0.3s;
 
 #paymentDetails {
     grid-row: 2;
