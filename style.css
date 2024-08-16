@@ -340,7 +340,7 @@ a #saleBanner div img {
 }
 
 .productSeachResult {
-    z-index: -1;
+    z-index: 0;
     display: grid;
     grid-template-areas: "PSRImage PSRTitle"
     "PSRImage PSRPrice";
