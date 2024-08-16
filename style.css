@@ -12,6 +12,11 @@
     height: 1vh;
 }
 
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+    
+
 ::-webkit-scrollbar-thumb{
     background: var(--green);
     border-radius: 24px;
@@ -415,11 +420,13 @@ a #saleBanner div img {
 }
 
 #productCheckoutList {
+    overflow: hidden;
     padding: 3vh;
 }
 
 #productCheckoutList>div {
     overflow: scroll; 
+    height: 100%
 }
 
 #productCheckoutList>div>div{
@@ -471,7 +478,7 @@ a #saleBanner div img {
 }
 
 .checkoutQuantity div:nth-child(3) {
-        font-size: 28px;
+        font-size: 24px;
         grid-column: 1 / span 2;
         font-family: "Kosugi Maru";
 }
