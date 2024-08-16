@@ -491,7 +491,23 @@ a #saleBanner div img {
 #paymentDetails {
     grid-row: 2;
     grid-column: 1;
+    display:grid;
+    grid-template-columns: 2fr 13fr 2fr;
+    font-family: "Kosugi Maru";
+    padding: 2vh;
 }
+
+#paymentDetails div:first-child {
+    font-size: 24px;
+    text-align: right;
+}
+
+#paymentDetails div:last-child {
+    font-size: 48px;
+    justify-self: ;
+    text-align: left;
+}
+
 
 #productCheckoutList, #paymentDetails {
     border-radius: 4vw;
