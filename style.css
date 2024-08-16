@@ -492,7 +492,7 @@ a #saleBanner div img {
     grid-row: 2;
     grid-column: 1;
     display:grid;
-    grid-template-columns: 2fr 12fr 2fr;
+    grid-template-columns: 2fr 11fr 2fr;
     font-family: "Kosugi Maru";
     padding: 2vh;
 }
@@ -506,7 +506,7 @@ a #saleBanner div img {
     font-size: 24px;
     justify-content: flex-end;
     grid-column: 2;
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vh;
 }
 
 #paymentDetails div:last-child {
