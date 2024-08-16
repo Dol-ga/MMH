@@ -520,7 +520,8 @@ a #saleBanner div img {
 }
 
 #orderButtonLinkHolder {
-    display: inline;
+    grid-row: 2;
+    grid-column: 2;
 
 }
 #orderButton {
@@ -529,8 +530,6 @@ a #saleBanner div img {
     background-color: var(--green);
     border-radius: 12vw;
     transition: 0.2s;
-    grid-row: 2;
-    grid-column: 2;
     color: white;
     font-size: 30px;
     font-weight: 600;
