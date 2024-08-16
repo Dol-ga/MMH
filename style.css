@@ -414,8 +414,13 @@ a #saleBanner div img {
     grid-template-columns: 4fr 1fr;
 }
 
+productCheckoutList {
+    padding: 2vh;
+    overflow: scroll 
+}
+
 #productCheckoutList>div{
-    height: 12vh;
+    height: 16vh;
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 8fr 2fr;
@@ -424,7 +429,7 @@ a #saleBanner div img {
 #productCheckoutList>div img {
     object-fit: scale-down;
     z-index: 1;
-    height:12vh;
+    height:16vh;
 }
 
 .checkoutQuantity {
@@ -445,6 +450,10 @@ a #saleBanner div img {
     height:100%;
     transition: 0.3s;
     user-select: none;
+}
+
+.checkoutQuantity div:nth-child(3) {
+        grid-row: 1 / 2;
 }
 
 .checkoutQuantity div:first-child:hover, .checkoutQuantity div:nth-child(2):hover {
