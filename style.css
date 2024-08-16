@@ -416,10 +416,13 @@ a #saleBanner div img {
 
 #productCheckoutList {
     padding: 3vh;
+}
+
+#productCheckoutList:div {
     overflow: scroll; 
 }
 
-#productCheckoutList>div{
+#productCheckoutList>div>div{
     height: 16vh;
     width: 100%;
     display: grid;
@@ -427,7 +430,7 @@ a #saleBanner div img {
     margin-bottom:2vh;
 }
 
-#productCheckoutList>div img {
+#productCheckoutList>div>div img {
     object-fit: scale-down;
     z-index: 1;
     height:16vh;
