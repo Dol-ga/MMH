@@ -423,8 +423,8 @@ a #saleBanner div img {
 
 #productCheckoutList>div img {
     object-fit: scale-down;
-    z-index: 1
-    height:12vh
+    z-index: 1;
+    height:12vh;
 }
 
 checkoutQuantity div:first-child, checkoutQuantity div:nth-child(2) {
