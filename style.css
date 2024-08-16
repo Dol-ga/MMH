@@ -257,6 +257,10 @@ main * img {
     transition: 0.3s;
 }
 
+.productHomeScreen:hover {
+    cursor:pointer
+}
+
 .productHomeScreen:hover img {
     transform: scale(1.1);
     transition: 0.3s;
@@ -377,6 +381,10 @@ a #saleBanner div img {
     transition: 0.3s; 
     transform: scale(1);
     
+}
+
+.productSeachResult:hover {
+    cursor:pointer
 }
 
 .productSeachResult:hover img {
