@@ -436,6 +436,10 @@ a #saleBanner div img {
     height:16vh;
 }
 
+.checkoutName {
+    font-size: 22px;
+}
+
 .checkoutQuantity {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -457,7 +461,8 @@ a #saleBanner div img {
 }
 
 .checkoutQuantity div:nth-child(3) {
-        grid-row: 1 / 2;
+        font-size: 22px;
+        grid-column: 1 / 2;
 }
 
 .checkoutQuantity div:first-child:hover, .checkoutQuantity div:nth-child(2):hover {
