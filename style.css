@@ -497,15 +497,21 @@ a #saleBanner div img {
     padding: 2vh;
 }
 
+#paymentDetails div {
+    display: flex;
+    align-items: flex-end;
+}
+
 #paymentDetails div:first-child {
     font-size: 24px;
     text-align: right;
+    grid-column: 2;
 }
 
 #paymentDetails div:last-child {
     font-size: 48px;
-    justify-self: ;
     text-align: left;
+    grid-column: 3;
 }
 
 
