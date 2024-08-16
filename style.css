@@ -492,7 +492,7 @@ a #saleBanner div img {
     grid-row: 2;
     grid-column: 1;
     display:grid;
-    grid-template-columns: 2fr 13fr 2fr;
+    grid-template-columns: 2fr 12fr 2fr;
     font-family: "Kosugi Maru";
     padding: 2vh;
 }
@@ -504,13 +504,13 @@ a #saleBanner div img {
 
 #paymentDetails div:first-child {
     font-size: 24px;
-    text-align: right;
+    justify-content: flex-end;
     grid-column: 2;
 }
 
 #paymentDetails div:last-child {
     font-size: 48px;
-    text-align: left;
+    justify-content: flex-start;
     grid-column: 3;
 }
 
@@ -519,6 +519,10 @@ a #saleBanner div img {
     border-radius: 4vw;
 }
 
+#orderButtonLinkHolder {
+    display: inline;
+
+}
 #orderButton {
     border: none;
     outline: none;
