@@ -427,7 +427,7 @@ a #saleBanner div img {
     height:12vh;
 }
 
-.checkoutQuantity div:first-child, checkoutQuantity div:nth-child(2) {
+.checkoutQuantity div:first-child, #checkoutQuantity div:nth-child(2) {
     background-color: var(--green);
     border-radius: 100%;
     width: 100%;
@@ -436,7 +436,7 @@ a #saleBanner div img {
     user-select: none;
 }
 
-.checkoutQuantity div:first-child:hover, checkoutQuantity div:nth-child(2):hover {
+.checkoutQuantity div:first-child:hover, #checkoutQuantity div:nth-child(2):hover {
     background-color: #3b8d3d;
     transition: 0.3s;
 
