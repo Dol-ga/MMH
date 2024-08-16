@@ -553,4 +553,5 @@ a #saleBanner div img {
 #orderButton:hover {
     background-color: #3b8d3d;
     transition: 0.2s;
+    cursor: pointer;
 }
