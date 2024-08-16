@@ -12,29 +12,46 @@
     <link rel="icon" type="image/x-icon" href="imgs/logo.png">
 
 
-    <title>Confirmar compra | Much Munch Harvest</title>
+    <title>Much Munch Harvest</title>
 </head>
 <body>
-    <header>
-        <div class="headerIcon"><a href="index.html"><img src="imgs/logo2.png" alt=""></a></div>
-        <div id="searchHolder">
-            <form action="search.html">
-                <input id="searchBar" type="text"></input>
-            </form>
-        </div>
-        <div class="headerIcon" id="headerKart"><a href="checkout.html"><img src="imgs/kart.png" alt=""></a></div>
-        <div class="headerIcon" id="headerInfo"><img src="imgs/info.png" alt=""> <form action=""><input type="checkbox">
-            <aside>
-                <ul>
-                    <li class="bigText"><a href="login.html">Realizar Login</a></li>
-                    <li><a href="about_us.html">Sobre nós</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </aside>
-        </div>
+    <header id="contactHeader">
+        <div class="headerIcon"><a href="index.html"><img src="imgs/logo.png" alt=""></a></div>
     </header>
     <main>
-        
+        <div id="contactHolder">
+            <div id="bigText">
+		<h1>
+		    Contato
+		</h1>
+                <div>
+		    Preencha o formulário ao lado para reportar elogios, reclamações, sugestões, e problemas, bem como registrar-se como vendedor na Much Munch Harvest.
+		</div>
+            </div>
+            <form class="normalUserForm" id="contactForm" action="index.html">
+                <div class="bigInput">
+		    <div>Nome</div>
+		    <input type="text"></input>
+		</div>
+                <div class="bigInput">
+		    <div>Assunto</div>
+		    <input type="text"></input>
+		</div>
+                <div>
+		    <div>Email</div>
+		    <input type="email"></input>
+		</div>
+                <div>
+		    <div>Telefone</div>
+		    <input type="tel"></input>
+		</div>
+                <div class="bigInput">
+		    <div>Mensagem</div>
+		    <textarea></textarea>
+		</div>
+		    <input type="submit" value="Enviar"></input>
+            </form>
+        </div>
     </main>
 </body>
 </html>

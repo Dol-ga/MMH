@@ -22,6 +22,10 @@
     border-radius: 24px;
 }
 
+::-webkit-calendar-picker-indicator {
+   margin-right: 0.5vw
+}
+
 
 body {
     background-color: var(--light-green);
@@ -69,6 +73,11 @@ header {
     box-shadow: 0px 1px 12px #266128;
     z-index: 4;
     overflow: hidden;
+}
+
+#contactHeader {
+    background-color: var(--light-green);
+    box-shadow: none;
 }
 
 .headerIcon {
@@ -213,6 +222,18 @@ aside ul .bigText {
 main {
     height: 91vh;
     overflow-y: scroll;
+}
+
+.marginLoginPages {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.marginLoginPages img {
+    margin: 0;
 }
 
 main * img {
@@ -554,4 +575,318 @@ a #saleBanner div img {
     background-color: #3b8d3d;
     transition: 0.2s;
     cursor: pointer;
+}
+
+#contactHolder {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    column-gap: 3vw;
+    height: 100%;
+}
+
+#bigText>h1 {
+    font-size: 64px;
+}
+
+#bigText>div {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.normalUserForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+    padding: 6vh;
+    border-radius: 5vw;
+    color: white;
+    background-color: var(--green);
+}
+
+.normalUserForm input:not([type=submit]), .normalUserForm textarea {
+    width: 100%;
+    background-color: var(--light-green);
+    color: var(--dark);
+    padding-left: 1vw;
+    outline: none;
+    border: none;
+    height: 50%;
+    border-radius: 30px;
+    font-family: "Lalezar", system-ui;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.normalUserForm input:not([type=submit]):focus, .normalUserForm textarea:focus {
+    background-color: var(--very-light-green);
+    transition: 0.3s
+}
+
+.normalUserForm textarea {
+   height: 90%;
+   resize: none;
+   padding-top: 2vh;
+   padding-bottom: 2vh;
+}
+
+.normalUserForm input[type=submit] {
+    font-family: "Lalezar", system-ui;
+    grid-column: 1 / span 2;
+    width: 30%;
+    height: 70%;
+    border: none;
+    outline: none;
+    background-color: #3A8F3D;
+    border-radius: 12vw;
+    transition: 0.2s;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    align-self: flex-end;
+    justify-self: center;
+    padding: 0;
+    padding-top: 0.3vh;
+}
+
+.normalUserForm input[type=submit]:hover {
+    background-color: #367B38;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.bigInput {
+    grid-column: 1 / span 2;
+}
+
+#contactForm {
+    height: 90%;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+}
+
+#aboutUsHolder {
+    padding-left: 5vw;
+    padding-right: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: grid;
+    grid-template-columns: 3fr 12fr 3fr 5fr;
+    height: 100%;
+}
+
+#aboutUsHolder div:first-child img, #aboutUsHolder div:nth-child(3) img {
+    height:15vh;
+    width:15vh
+}
+
+#aboutUsHolder div:first-child img {
+    transform: rotate(15deg);
+    margin-top: 5vh;
+    animation-name: upAndDown1;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#aboutUsHolder div:nth-child(3) img {
+    animation-name: upAndDown2;
+    animation-duration: 16s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#aboutUsHolder div:nth-child(4) img {
+    height:35vh;
+    width:35vh;
+    animation-name: upAndDown3;
+    animation-duration: 24s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#aboutUsHolder div:nth-child(3), #aboutUsHolder div:nth-child(4) {
+    align-self: flex-end;
+}
+
+#aboutUsHolder div:nth-child(2)>h1 {
+    font-size: 64px;
+}
+
+#aboutUsHolder div:nth-child(2)>h2 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#aboutUsHolder div:nth-child(2)>div {
+    font-size: 24px;
+}
+
+@keyframes upAndDown1 {
+    0%   {transform: translateY(0vh), rotate(15deg)}
+    25%  {transform: translateY(-4vh) rotate(8deg)}
+    75% {transform: translateY(4vh) rotate(0deg)}
+    100%   {transform: translateY(0vh), rotate(15deg)}
+}
+
+@keyframes upAndDown2 {
+    0%   {transform: translate(0vw, 0vh)}
+    35%  {transform: translate(3vw,-4vh), rotate(10deg)}
+    80% {transform: translate(-2vw, 4vh)rotate(-2deg)}
+    100%   {transform: translateY(0vw, 0vh)}
+}
+
+@keyframes upAndDown3 {
+    0%   {transform: translate(0vw, 0vh)}
+    35%  {transform: translate(0.2vw,-0.2vh) rotate(1deg)}
+    80% {transform: translate(-0.2vw, 0.2vh)}
+    100%   {transform: translateY(0vw, 0vh)}
+}
+
+.loginScreenBG {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover
+}
+
+#loginForm {
+   width: 30%;
+   height: 85%;
+   position: absolute;
+   top: 5vh;
+   box-shadow: 0px 5px 0px #3b8d3d, 3px 0px 0px #3b8d3d, -3px 0px 0px #3b8d3d;
+}
+
+#loginForm input {
+   letter-spacing: 0.1vw;
+}
+
+#loginForm>#imgHolder {
+   border-radius: 50vw;
+   width: 7vw;
+   height: 7vw;
+   overflow: hidden;
+   justify-self: center;
+}
+
+#loginForm>#imgHolder>img {
+   object-fit: scale-down;
+   width: 100%;
+   height: 100%;
+}
+
+#textHolder {
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+}
+
+
+#textHolder * {
+   margin: 0;
+   text-align: center;
+
+}
+
+#textHolder>p:first-child{
+   font-size: 64px;
+}
+
+#textHolder>p:last-child{
+   font-size: 24px;
+}
+
+
+#loginForm input:not([type=submit]) {
+   height: 5vh;
+   font-size: 24px;
+   padding-top: 0.5vh
+}
+
+#loginForm input[type=submit] {
+   margin-top: 2vh;
+   height: 6vh;
+}
+
+#loginOtherOptions {
+   margin-top: 2vh;
+   display: flex;
+   justify-content: space-around;
+}
+
+.otherOption  {
+   display:flex;
+   transition: 0.3s;
+}
+
+.otherOption:hover  {
+   transition: 0.3s;
+   font-size: 18px;
+}
+
+.otherOption img {
+   object-fit: scale-down;
+   height: 2vh;
+   margin-right: 1vw;
+   transition: 0.3s;
+}
+
+.otherOption:hover img {
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+
+#loginOtherOptions>div {
+   user-select: none;
+}
+
+#registerForm {
+   width:65%;
+   height: 85%;
+   position: absolute;
+   top: 5vh;
+   box-shadow: 0px 5px 0px #3b8d3d, 3px 0px 0px #3b8d3d, -3px 0px 0px #3b8d3d;
+   grid-template-rows: 2fr 6fr 1fr;
+}
+
+#registerForm>div:last-child {
+   display:flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+
+#registerForm>div:nth-child(4) {
+   display:flex;
+   align-items: flex-end;
+   justify-content: flex-start;
+}
+
+#registerForm>div:nth-child(2), #registerForm>div:nth-child(3) {
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#registerForm>div:nth-child(2) div, #registerForm>div:nth-child(3) div {
+   width: 100%
+}
+
+#registerForm>#textHolder {
+   font-size: 64px;
+   grid-column: 1 / span 2;
+}
+
+#registerForm input:not([type=submit]) {
+   height: 5vh;
+   margin-bottom: 1.5vh;
+}
+
+#registerForm input[type=submit] {
+   height: 100%;
+   width:10vw;
+
 }

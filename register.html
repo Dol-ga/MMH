@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="imgs/logo.png">
 
 
-    <title>Much Munch Harvest</title>
+    <title>Login | Much Munch Harvest</title>
 </head>
 <body>
     <header>
@@ -33,20 +33,38 @@
             </aside>
         </div>
     </header>
-    <main>
-        <div id="aboutUsHolder">
-            <div><img src="imgs/logo.png" alt=""></div>
-            <div>
-                <h1>Sobre Nós</h1>
-                <h2>Olá! Eu sou Matheus, da Much Munch Harvest!</h2>
-                <div>Fundada em 2024, nós sempre buscamos oferecer os melhores serviços na área de delivery de refeições, permitindo a divulgação e viabilizando entregas de forma simples e eficiente. <br><br>
-Nós representamos uma fatia do mercado que não recebe o mesmo reconhecimento: Restaurantes locais com comida saudável. Qualquer um pode botar seus produtos em nossa plataforma, promovendo assim um futuro onde refeições saudáveis são cada vez mais comuns. <br><br>
-Esperamos que você tenha uma excelente experiência com nossa plataforma, e que delicie-se com os pratos 
-dos nossos parceiros.</div>
-	    </div>
-            <div><img src="imgs/bubbles.png" alt=""></div>
-            <div><img src="imgs/photo.png" alt=""></div>
-        </div>
+    <main class="marginLoginPages">
+        <img src="imgs/loginScreenBG.png" class="loginScreenBG">
+        <form></form>
+	<form class="normalUserForm" id="registerForm" action="index.html">
+		<div class="bigInput" id="textHolder">
+                     Registre-se
+                </div>
+                <div>
+		     <div>Nomne*</div>
+		     <input type="text"></input>
+		     <div>Email*</div>
+		     <input type="email"></input>
+		     <div>Senha*</div>
+		     <input type="password"></input>
+		     <div>Confirmar Senha*</div>
+		     <input type="password"></input>
+		</div>
+                <div>
+		    <div>Data de Aniversário</div>
+		    <input type="date"></input>
+		    <div>Telefone</div>
+		    <input type="tel"></input>
+		    <div>Endereço</div>
+		    <input type="text"></input>
+		</div>
+		<div>
+                    <a href="login.html" class="otherOption"><img src="imgs/arrow.png"><div>Tenho uma conta</div></a>
+		</div>
+		<div>
+                    <input type="submit" value="Cadastrar"></input>
+		</div>
+            </form>
     </main>
 </body>
 </html>
