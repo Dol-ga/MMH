@@ -418,7 +418,7 @@ a #saleBanner div img {
     padding: 3vh;
 }
 
-#productCheckoutList:div {
+#productCheckoutList>div {
     overflow: scroll; 
 }
 
