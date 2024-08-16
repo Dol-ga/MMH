@@ -427,7 +427,18 @@ a #saleBanner div img {
     height:12vh;
 }
 
+.checkoutQuantity {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1f 1f;
+}
+    
+
 .checkoutQuantity div:first-child, .checkoutQuantity div:nth-child(2) {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--green);
     border-radius: 100%;
     width: 100%;
@@ -439,6 +450,7 @@ a #saleBanner div img {
 .checkoutQuantity div:first-child:hover, .checkoutQuantity div:nth-child(2):hover {
     background-color: #3b8d3d;
     transition: 0.3s;
+}
 
 #paymentDetails {
     grid-row: 2;
