@@ -423,22 +423,22 @@ a #saleBanner div img {
 }
 
 #productCheckoutList>div>div{
-    height: 16vh;
+    height: 20vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 8fr 2fr;
+    grid-template-columns: 2fr 8fr 2fr;
     margin-bottom:2vh;
 }
 
 #productCheckoutList>div>div img {
     object-fit: scale-down;
     z-index: 1;
-    height:16vh;
+    height:20vh;
     justify-self: center
 }
 
 .checkoutName {
-    font-size: 42px;
+    font-size: 36px;
 }
 
 .checkoutQuantity {
