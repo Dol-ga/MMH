@@ -414,9 +414,9 @@ a #saleBanner div img {
     grid-template-columns: 4fr 1fr;
 }
 
-productCheckoutList {
-    padding: 2vh;
-    overflow: scroll 
+#productCheckoutList {
+    padding: 3vh;
+    overflow: scroll; 
 }
 
 #productCheckoutList>div{
@@ -424,6 +424,7 @@ productCheckoutList {
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 8fr 2fr;
+    margin-bottom:2vh;
 }
 
 #productCheckoutList>div img {
@@ -435,7 +436,7 @@ productCheckoutList {
 .checkoutQuantity {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1f 1f;
+    grid-template-columns: 1fr 1fr;
 }
     
 
