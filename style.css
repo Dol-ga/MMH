@@ -848,7 +848,6 @@ a #saleBanner div img {
    height: 85%;
    position: absolute;
    top: 5vh;
-   box-shadow: 0px 5px 0px #3b8d3d, 3px 0px 0px #3b8d3d, -3px 0px 0px #3b8d3d;
    grid-template-rows: 2fr 6fr 1fr;
 }
 
