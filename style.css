@@ -753,14 +753,14 @@ a #saleBanner div img {
     object-fit: cover
 }
 
-Form {
+#loginForm {
    width: 30%;
    height: 85%;
    position: absolute;
    top: 5vh;
 }
 
-Form input {
+#loginForm input {
    letter-spacing: 0.1vw;
 }
 
